@@ -9,24 +9,23 @@ def bubble_sort(array)
             p array.insert(first_index, array.delete_at(second_index))
             first_index += 1
             second_index += 1
-            if second_index >= 6
+            if second_index >= array.length
                 first_index = 0
                 second_index = 1
-            else
             end
         else
+            p array
             first_index += 1
             second_index += 1
-            if second_index >= 6
+            if second_index >= array.length
                 first_index = 0
                 second_index = 1
-            else
             end
         end
     end
 end
 
-bubble_sort([4,3,78,2,0,2])
+bubble_sort([4,3,78,2,0,2,6,9,23])
 
 # grab the first 2 indexes (0, 1)
 # switch them if the left index is higher than the right index
